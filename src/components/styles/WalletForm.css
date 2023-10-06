@@ -1,0 +1,62 @@
+.container-form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.container-form > * {
+  margin: 10px;
+}
+
+.valor-input , .descricao-input , .moeda-input , .metodo-input , .tag-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor-input input , .descricao-input input {
+  font-size: 1rem;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.moeda-input select , .metodo-input select , .tag-input select {
+  font-size: 1rem;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.btn-add , .btn-edit {
+  background-color: rgb(72, 130, 134);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.btn-add:hover , .btn-edit:hover {
+  background-color: rgb(55, 62, 64);
+}
+
+@media only screen and ( max-width : 768px ) {
+
+  .container-form {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .container-form > * {
+    width: 100%;
+  }
+
+  .btn-add , .btn-edit {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

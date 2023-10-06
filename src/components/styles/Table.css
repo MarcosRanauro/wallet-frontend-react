@@ -1,0 +1,66 @@
+.table-container {
+  background-color: rgb(182, 214, 204);
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.header-tag-container th {
+  background-color: rgb(72, 130, 134);
+  border-bottom: 1px solid white;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  text-align: left;
+}
+
+.body-tag-container td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.body-tag-container td:last-child {
+  text-align: center;
+}
+
+.delete-btn , .edit-btn {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+.edit-btn {
+  color: #2ecc71;
+}
+
+.delete-btn:hover , .edit-btn:hover {
+  background-color: #f2f2f2;
+}
+
+@media only screen and ( max-width : 768px ) {
+
+  .table-container {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .header-tag-container , .body-tag-container {
+    display: table;
+    width: 100%;
+  }
+
+  .header-tag-container {
+    table-layout: fixed;
+  }
+
+  .header-tag-container th , .body-tag-container td {
+    white-space: normal;
+  }
+}

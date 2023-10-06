@@ -1,0 +1,33 @@
+.header-container {
+  align-items: center;
+  background-color: #f2f2f2;
+  background-image: url('../styles/img/bg-01.jpg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.header-container span {
+  margin-right: 10px;
+}
+
+.header-container p {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+@media only screen and ( max-width : 768px ) {
+
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-container span , .header-container p {
+    margin: 5px;
+  }
+}

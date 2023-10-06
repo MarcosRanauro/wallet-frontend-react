@@ -1,0 +1,110 @@
+body {
+  background-color: #ebeeef;
+}
+
+/* estilo do formulário */
+.container-form-login {
+  align-items: center;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 50%;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+/* estilo do título */
+.title {
+  background-image: url('./img/bg-01.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%; /* alteração para tornar a imagem responsiva */
+  font-size: 2rem;
+  height: 150px;
+  margin-top: 0;
+  opacity: 0.5;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.h2-title {
+  margin: 0;
+}
+
+/* estilo dos rótulos e inputs */
+.container-label-login {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 5px;
+  text-align: left;
+}
+
+.input {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #06c;
+}
+
+/* estilo do botão */
+.button-container {
+  background-color: #06c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.button-container:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+.button-container:hover:not( [ disabled ] ) {
+  background-color: #0052a3;
+}
+
+/* Responsivo para telas menores que 768px */
+
+@media screen and ( max-width : 767px ) {
+
+  .container-form-login {
+    max-width: none;
+    width: 100%;
+  }
+
+  .input {
+    box-sizing: border-box;
+    max-width: none;
+    width: 100vw;
+  }
+
+  .button-container {
+    box-sizing: border-box;
+    max-width: none;
+    width: 100vw;
+  }
+}
